@@ -5,10 +5,10 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet],
+//  templateUrl: './app.component.html',
+  template: `<p>teste</p>
+  <router-outlet></router-outlet>`
 })
 export class AppComponent {
-  title = 'lista-de-tarefas';
 }
